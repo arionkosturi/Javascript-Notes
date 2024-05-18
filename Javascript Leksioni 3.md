@@ -353,7 +353,7 @@ console.log(nums[6]); // undefined
 let nums = [9,7,3,4,12,6];
 for (i=0; i<=nums.length; i++)
 ```
-#### Dalja eshte si me poshte
+##### Dalja eshte si me poshte
 ```console
 9
 7
@@ -363,4 +363,13 @@ for (i=0; i<=nums.length; i++)
 6
 undefined
 ```
-#### 
+#### Sic e shohim ne dalje kemi edhe nje element undefined pasi kemi dale jashte indeksit te vektorit.
+### Per ta rregulluar perdorim
+
+```js
+i<=nums.length-1
+```
+#### ose
+```js
+i<nums.length
+```
