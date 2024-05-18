@@ -363,13 +363,13 @@ for (i=0; i<=nums.length; i++)
 6
 undefined
 ```
-#### Sic e shohim ne dalje kemi edhe nje element undefined pasi kemi dale jashte indeksit te vektorit.
+##### Sic e shohim ne dalje kemi edhe nje element undefined pasi kemi dale jashte indeksit te vektorit.
 ### Per ta rregulluar perdorim
 
 ```js
 i<=nums.length-1
 ```
-#### ose
+##### ose
 ```js
 i<nums.length
 ```
