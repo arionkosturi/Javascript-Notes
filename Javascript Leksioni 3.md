@@ -404,9 +404,29 @@ sum(1,2,3) // 3
 sum(1,2,3) // 6
 sum(1,12,3,7) // 23
 ```
+##### Dalja
 ```console
 1
 3
 6
 23
+```
+#### Nese ne Rest Params fusim para dhe argumenta, atehere ato vendosen para vektorit.
+```js
+function sum(x, ...args) {
+  
+  console.log(x,args)
+}
+
+sum(1) // x: 1 args: nuk ka
+sum(1,2) // x: 1 args: [2]
+sum(1,2,3) // x: 1 args: [2,3]
+sum(1,12,3,7) // x: 1 args: [12,3,7]
+```
+##### Dalja
+```console
+1 []
+1 [2]
+1 [2,3]
+1 [12,3,7]
 ```
