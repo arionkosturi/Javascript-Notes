@@ -452,3 +452,18 @@ sum(1,12,3,7) // x: 1 args: [12,3,7]
  // nums.funksioni();
 
 ```
+### Shembuj
+```js
+  let nums = [9,7,3,4,12,6];
+  // Thirre n => console.log(n) per cdo element te nums
+  nums.forEach(n => console.log("Une jam numri" + n)); 
+```
+##### Dalja
+```console
+Une jam numri: 9
+Une jam numri: 7
+Une jam numri: 3
+Une jam numri: 4
+Une jam numri: 12
+Une jam numri: 6
+```
