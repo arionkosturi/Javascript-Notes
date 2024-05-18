@@ -382,3 +382,11 @@ for (i=0; i<nums.length; i++) {
   console.log(nums[i]);
 }
 ```
+#### Nje menyre tjeter iterimi eshte edhe kjo strukture qe perdoret eksluzivisht per vektoret.
+```js
+let nums = [9,7,3,4,12,6];
+for (n of nums) {
+  console.log(n);
+}
+```
+
