@@ -373,3 +373,10 @@ i<=nums.length-1
 ```js
 i<nums.length
 ```
+#### Pra zgjidhja perfundimtare eshte
+```js
+let nums = [9,7,3,4,12,6];
+for (i=0; i<nums.length; i++) {
+  console.log(nums[i]);
+}
+```
