@@ -430,3 +430,25 @@ sum(1,12,3,7) // x: 1 args: [12,3,7]
 1 [2,3]
 1 [12,3,7]
 ```
+# Funksionet e Vektoreve
+# Array Functions
+### 1. Vektoret si edhe cdo tip tjeter te dhenash trajtohet si objekt.
+### 2. Mbi vektoret mund te thirren funksione te ndryshme te paradefinuara nga vete JavaScript
+### 3. Disa funksione qe perdoren shpesh: pop, push, forEach, filter, map, reduce.
+```js
+ nums.pop();
+ nums.push();
+ nums.forEach();
+ nums.filter();
+ nums.map();
+ nums.reduce();
+```
+#### Funksioni qe thirret brenda nje klase quhet __method__ 
+```js
+ nums.forEach();
+ // nums eshte objekt i klasese Array
+ // forEach eshte funksion brenda klases Array
+ // funksioni qe eshte brenda klases thirret me pike.
+ // nums.funksioni();
+
+```
