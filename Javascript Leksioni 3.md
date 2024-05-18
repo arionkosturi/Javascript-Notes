@@ -351,7 +351,9 @@ console.log(nums[6]); // undefined
 #### Te shkruhet nje unaze qe iteron mbi cdo element te vektorit.
 ```js
 let nums = [9,7,3,4,12,6];
-for (i=0; i<=nums.length; i++)
+for (i=0; i<=nums.length; i++){
+  console.log(nums[i]);
+}
 ```
 ##### Dalja eshte si me poshte
 ```console
