@@ -347,4 +347,20 @@ console.log(nums[6]); // undefined
   nums.length
 ```
 
-# 1h50m20s
+### Ushtrim me vektoret
+#### Te shkruhet nje unaze qe iteron mbi cdo element te vektorit.
+```js
+let nums = [9,7,3,4,12,6];
+for (i=0; i<=nums.length; i++)
+```
+#### Dalja eshte si me poshte
+```console
+9
+7
+3
+4
+12
+6
+undefined
+```
+#### 
