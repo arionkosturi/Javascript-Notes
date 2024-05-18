@@ -467,3 +467,39 @@ Une jam numri: 4
 Une jam numri: 12
 Une jam numri: 6
 ```
+#### forEach therret nje funksion per cdo element te arrayt.
+
+## Filter
+### Filter nga vete emri, filtron elementet nga nje array.
+#### Nje shembull pa filter dhe me filter.
+#### Nje loop qe nxjerr elementet e array me te medhenj se 5.
+##### Pa perdorur filter
+```js
+  let nums = [9,7,3,4,12,6];
+  for (n of nums) {
+    if (n > 5) console.log(n);
+  }
+```
+##### Duke perdorur filter
+```js
+  let nums = [9,7,3,4,12,6];
+  console.log(
+    nums.filter(n=>n>5)
+  );
+```
+##### Shembull me numrat cift
+```js
+  let nums = [9,7,3,4,12,6];
+  console.log(
+    nums.filter(n=>n%2 == 0)
+  );
+```
+##### Shembull me numrat tek
+```js
+  let nums = [9,7,3,4,12,6];
+  console.log(
+    nums.filter(n=>n%2 != 0)
+  );
+```
+### Timestamp
+#
