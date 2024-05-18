@@ -389,4 +389,24 @@ for (n of nums) {
   console.log(n);
 }
 ```
+## Shembull me Rest Args dhe iterimin me for te vektorit.
+```js
+function sum(...args) {
+  shuma = 0;
+  for(argumenti of args) {
+    shuma += argumenti;
+  }
+  console.log(shuma)
+}
 
+sum(1) // 1
+sum(1,2,3) // 3
+sum(1,2,3) // 6
+sum(1,12,3,7) // 23
+```
+```console
+1
+3
+6
+23
+```
