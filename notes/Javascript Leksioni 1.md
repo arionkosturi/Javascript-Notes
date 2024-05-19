@@ -100,3 +100,44 @@ console.log(x);
 abc
 false
 ```
+---
+## Variablat dhe Konstantet
+#### Variablat deklarohen permes celesfjales `let` ose `var`. Mund ta ndryshojne vleren pergjate rrjedhes se programit.
+#### Konstantet deklarohen permes celesfjales `const`
+#### Kur tentojme ti ndryshojme vleren konstantes interpretuesi na jep `error`
+```bash
+Uncaught TypeError: Assignment to constant variable.
+```
+---
+#### Blloqet
+##### Bllok i kodit llogaritet kodi qe gjendet brenda kllapave gjarperuese.
+```js
+  // Blloku 1
+ {
+    let x = 100;
+    console.log(x);
+ }
+ // Blloku 2
+  {
+    let x = 200;
+    console.log(x);
+ }
+ // Kodet jane te izoluar ne blloqet e tyre.
+```
+### Fusha e qasshmerise
+1. #### Globale - e qasshme ne te gjithe scriptin.
+2. #### Brenda Bllokut - e qasshme vetem brenda bllokut.
+
+```js
+{
+  var x = 10;
+  let y = 20;
+  const z = 30;
+  console.log(x, y, z); // 10 20 30
+}
+  console.log(x); // x is not defined
+  console.log(y); // y is not defined
+  console.log(z); // z is not defined
+```
+
+# Progress: h m s
