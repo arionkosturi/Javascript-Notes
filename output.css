@@ -588,6 +588,11 @@ video {
   }
 }
 
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .mx-5 {
   margin-left: 1.25rem;
   margin-right: 1.25rem;
@@ -596,26 +601,6 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-
-.mx-10 {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
-}
-
-.mx-60 {
-  margin-left: 15rem;
-  margin-right: 15rem;
-}
-
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 .flex {
@@ -680,11 +665,6 @@ video {
   .dark\:bg-brandDark {
     --tw-bg-opacity: 1;
     background-color: rgb(13 17 22 / var(--tw-bg-opacity));
-  }
-
-  .dark\:bg-neutral-950 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(10 10 10 / var(--tw-bg-opacity));
   }
 
   .dark\:text-white {

@@ -528,3 +528,4 @@ Une jam numri: 6
   let a1_dhe_a2_spread = [...a1, ...a2]; // [1, 2, 10, 20]
   console.log(a1_dhe_a2_spread); // [1, 2, 10, 20]
 ```
+####
