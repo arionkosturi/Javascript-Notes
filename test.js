@@ -1,3 +1,6 @@
-let name, surname;
-[name, surname] = ['John', 'Smith'];
-console.log(name,surname); // John Smith
+function f(a,b, ...args) {
+  return [b, args, a];
+}
+const [x, ,y] = f(10, 20, 'a', 'b');
+
+console.log(x, y); //???

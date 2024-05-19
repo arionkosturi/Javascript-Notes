@@ -252,5 +252,71 @@ const [x, ...y] = f();
 
 console.log(x); // 1
 console.log(y); // [2, 3]
+```
+## Ushtrime
 
+### Ushtrim 1.
+###### Sa do jete dalja e programit?
+```js
+function f(a,b, ...args) {
+  return [b, args, a];
+}
+const [x, ,y] = f(10, 20, 'a', 'b');
+
+console.log(x, y); //???
+
+```
+```console
+20 10
+```
+##### Shpjegimi
+```js
+function f(a, b, ...args) {
+  //     f(10,20, 'a', 'b')
+  // a: 10
+  // b: 20
+  // args: ['a', 'b']
+
+  return [b, args, a];
+         //     [20, ['a', 'b'], 10]
+}
+const [x, ,y] = f(10, 20, 'a', 'b');
+
+console.log(x, y); // 20, 10
+
+```
+
+### Ushtrimi 2.
+```js
+function f(...args) {
+  let x = [...args, 'b', 'c'];
+  return [x [x.length-1], args, ...x];
+}
+
+const [ , , a, b] = f(1, 2, 3, 4, 5);
+
+console.log(a, b); // ???
+```
+```console
+
+```
+
+#### Shpjegimi
+```js
+function f(...args) {
+     // f(1,2,3,4,5)
+     // args: [1,2,3,4,5]
+  let x = [...args, 'b', 'c'];
+   // x = [1,2,3,4,5,'b','c']
+   //      0,1,2,3,4, 5 , 6
+   // x.length --- 7
+   // x.length-1 --- 6
+  return [x [x.length-1], args, ...x];
+      // ['c', [1,2,3,4,5], 1,2,3,4,5,'b','c']
+}
+              //['c', [1,2,3,4,5], 1,2,3,4,5,'b','c']
+              //  x       x
+const [ , , a, b] = f(1, 2, 3, 4, 5);
+
+console.log(a, b); // a: 1, b: 2
 ```
