@@ -461,8 +461,28 @@ console.log(`Hello there ${name} some other text.`);
 function f(a, b, ...args) {
   return `${a+args[0]}${b}`;
 }
-  const [x, y, z] = Array.from(f('a', 10, 'ge', 's1', ;b));
+  const [x, y, z] = Array.from(f('a', 10, 'ge', 's1', 'b'));
   // x
   // y
   // z 
 ```
+###### Dalja
+```console
+age
+```
+#### Shpjegimi i ushtrimit:
+```js
+function f(a, b, ...args) {
+  // f('a', 10, 'ge', 's1', 'b')
+  // a: 'a'
+  // b: 10
+  // args: ['ge', 's1', 'b']
+  return `${a+args[0]}${b}`;
+          //age10
+}                   // ['a', 'g', '1', '0']
+  const [x, y, z] = Array.from(f('a', 10, 'ge', 's1', 'b'));
+  // x: a
+  // y: g
+  // z: e 
+```
+---
