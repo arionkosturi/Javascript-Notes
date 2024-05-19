@@ -120,6 +120,39 @@ function sum(n) {
   // recursion
   return parseInt(n[0]) + sum(n.slice(1));
 }
+// sum(['9','8','2','1'])
+// 1) '9' + sum(['8','2','1'])
+// 2) '17' + sum(['2','1'])
+// 3) '19' + sum(['1'])
+// 4) '20'
 
 console.log(sum(9821)) // 20
+```
+# Temat e reja te sessionit.
+1. ### Destrukturimi i vektoreve.
+2. ### Trajtimi i perjashtimeve.
+3. ### Template Literals.
+
+## Destrukturimi i vektoreve.
+```js
+// Basic variable assignment.
+
+const foo = ['one', 'two', 'three'];
+// ketu ndodh destukturimi
+const [red, yellow, green] = foo;
+
+console.log(red); // "one"
+console.log(yellow); // "two"
+console.log(green); // "three"
+```
+```js
+const [x, y, z] = [1, 2, 3];
+console.log(x, y, z); // 1 2 3
+```
+```js
+// Assignment separate from declaration.
+let a, b;
+[a, b] = [1,2];
+console.log(a); // 1
+console.log(b); // 2
 ```
