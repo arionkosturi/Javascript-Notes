@@ -135,7 +135,7 @@ Uncaught TypeError: Assignment to constant variable.
   const z = 30;
   console.log(x, y, z); // 10 20 30
 }
-  console.log(x); // x is not defined
+  console.log(x); // 10 - var ka qasshmeri globale.
   console.log(y); // y is not defined
   console.log(z); // z is not defined
 ```
