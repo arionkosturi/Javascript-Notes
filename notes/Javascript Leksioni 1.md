@@ -78,7 +78,25 @@ let a; // undefined
 ```js
 let value = Symbol('Hello');
 ```
-8. #### Object - Cifte celes-vlere i nje koleksioni te te dhenash.
+8. #### Object - Cift celes-vlere i nje koleksioni te te dhenash.
 ```js
 let student = { };
+```
+---
+#### Shembull:
+```js
+x = 10;
+console.log(x);
+
+x = 'abc';
+console.log(x);
+
+x = false;
+console.log(x);
+```
+##### Dalja:
+```console
+10
+abc
+false
 ```
