@@ -93,7 +93,7 @@ console.log(sum(9821)); // 20
 ```js
 // Zgjidhje me reduce.
 function sum(n) {
-  return Array.from(n.toString()).reduce((s,d) => s + parseInt(d));
+  return Array.from(n.toString()).reduce((s,d) => s + parseInt(d), 0);
 }
 console.log(sum(9821));
 ```
