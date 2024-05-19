@@ -26,7 +26,7 @@
 ```console
 y is not defined
 ```
-##### is not defined eshte error ndersa undefined eshte data type,
+##### is not defined eshte error ndersa undefined eshte data type.
 #### Po nese perdorim 'var' brenda bllokut?
 ```js
   const f = function(x) {
@@ -38,4 +38,35 @@ y is not defined
   }
 
   console.log(y);  
+```
+##### Variabla eshte rritur por nuk kthehet.
+```console
+10
+```
+#### Quiz 2
+```js
+const f = (x, y) => x / y;
+const g = (a, b) => f(a,b);
+console.log(g(10,0)) // Infinit
+
+```
+###### Shprehur ndryshe
+```js
+// eshte duke kalkuluar pjestimin e dy numrave x dhe y
+const f = (x, y) => x / y;
+// eshte funksion i cili kthen referencen deri tek funksioni f
+const g = () => f;
+// g() kthen funksionin f - pastaj (10, 2) jane argumentet e funksionit f
+console.log(g()(10,2)) // 5
+```
+#### Quiz me Funksion Rekursiv.
+```js
+// Funksioni sum pranon si parameter nje numer n dhe duhet te ktheje si rezultat shumen e shifrave te n-se. 
+// dmth: sum(9821) duhet te jape rezultatin 9+8+2+1 pra 20.
+
+
+```
+
+```js
+
 ```
