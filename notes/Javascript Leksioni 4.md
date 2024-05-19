@@ -364,5 +364,53 @@ function g(a, b, ...args) {
 const [ , a, , b, c ] = g(10, 9876, 'a', 'b');
 
 console.log(a, b, c); // a, b, undefined
-
 ```
+
+### Ushtrimi 4.
+```js
+function f(x, y, ...args) {
+  return (function(a, ...nums) {
+    return [...nums, a, x, y, args[0]];
+  })(10, 'b', 'e', 'g');
+}
+
+const [, x, y, ,z] = f(10, 20, 1, 2, 3, 4, 5);
+// x: ? y: ? z: ?
+
+console.log(x, y, z); // ???
+```
+##### Dalja
+```console
+e g 10
+```
+#### Shpjegimi i ushtrimit 4.
+```js
+function f(x, y, ...args) {
+  // f(10, 20, 1, 2, 3, 4, 5)
+  // x: 10
+  // y: 20
+  // args: [1, 2, 3, 4, 5]
+
+  return (function(a, ...nums) {
+    return [...nums, a, x, y, args[0]];
+          // ['b', 'e', 'g', 10, 10, 20, 1]
+  })(10, 'b', 'e', 'g');
+  
+  // a(10, 'b', 'e', 'g')
+  // a: 10
+  // nums: ['b', 'e', 'g']
+}
+                   
+                 //  ['b','e','g',10,10,20,1]
+const [ , x, y, ,z] = f(10, 20, 1, 2, 3, 4, 5);
+// x: e y: g z: 10
+
+console.log(x, y, z); // e g 10
+```
+# Njohuri te reja
+# Trajtimi i perjashtimeve
+### Trajtimi i perjashtimeve behet permes kombinimit te celesfjaleve:
+1. #### Throw
+2. #### Try
+3. #### Catch
+4. #### Finally
