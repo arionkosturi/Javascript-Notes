@@ -510,15 +510,21 @@ Une jam numri: 6
   );
 ```
 # Sintaksa Spread (...) / Sintaksa per Zgjerim (...)
-#### Sintaksa spread (...) lejon qe nje objekt i iterueshem si string apo array, te mund te zgjerohet ne vende ku nuk priten argumente (per funksione) ose elemente (per array). 
+#### Sintaksa spread (...) lejon qe nje objekt i iterueshem si string apo array, ne vende ku priten zero ose me shume argumente (per funksione) ose elemente (per array).
+```js
+ [...iterableObj, '4', 'five', 6];
+``` 
 #### Ne Object Literal, sintaksa spread liston vetite e objektit shton ciftet celes-vlere ne objektin qe krijohet.
 
 #### Sintaksa Spread duket identike si Sintaksa Rest. Por ne ide jane komplet ndryshe. Sintaksa Spread "zgjeron" nje array ne elementet e tij, ndersa Sintaksa Rest mbledh disa elemente dhe i "ngjesh" ne nje element te vetem.
 
 
 #### Shembull
+##### Kombinimi i dy array me dhe pa spread.
 ```js
-  let nums = [9, 7, 3, 4, 12, 6];
-  let m = [4, 5, 20];
-
+  let a1 = [1, 2];
+  let a2 = [10, 20];
+  let a1_dhe_a2 = [a1, a2]; // [[1, 2],[10, 20]]
+  let a1_dhe_a2_spread = [...a1, ...a2]; // [1, 2, 10, 20]
+  console.log(a1_dhe_a2_spread); // [1, 2, 10, 20]
 ```
