@@ -618,10 +618,6 @@ video {
   height: 14rem;
 }
 
-.h-32 {
-  height: 8rem;
-}
-
 .w-5 {
   width: 1.25rem;
 }
@@ -658,12 +654,12 @@ video {
   white-space: nowrap;
 }
 
-.rounded-lg {
-  border-radius: 0.5rem;
-}
-
 .rounded-2xl {
   border-radius: 1rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .bg-white {
@@ -674,16 +670,6 @@ video {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.object-fill {
-  -o-object-fit: fill;
-     object-fit: fill;
-}
-
-.object-scale-down {
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
 }
 
 .px-6 {
@@ -744,8 +730,48 @@ video {
   color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
+.opacity-30 {
+  opacity: 0.3;
+}
+
+.opacity-35 {
+  opacity: 0.35;
+}
+
+.opacity-40 {
+  opacity: 0.4;
+}
+
+.opacity-85 {
+  opacity: 0.85;
+}
+
 .hover\:underline:hover {
   text-decoration-line: underline;
+}
+
+.hover\:opacity-10:hover {
+  opacity: 0.1;
+}
+
+.hover\:opacity-30:hover {
+  opacity: 0.3;
+}
+
+.hover\:opacity-85:hover {
+  opacity: 0.85;
+}
+
+.hover\:opacity-80:hover {
+  opacity: 0.8;
+}
+
+.hover\:opacity-70:hover {
+  opacity: 0.7;
+}
+
+.hover\:opacity-75:hover {
+  opacity: 0.75;
 }
 
 @media (min-width: 768px) {
