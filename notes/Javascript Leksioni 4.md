@@ -485,4 +485,12 @@ function f(a, b, ...args) {
   // y: g
   // z: e 
 ```
+```js
+// Po kur perdorim slice?
+const [x, y, z] = Array.from(f('a', 10, 'ge', 's1', 'b').slice(2));
+// me slice(2) kemi larguar 2 te parat.
+  // x: e
+  // y: 1
+  // z: 0 
+```
 ---
