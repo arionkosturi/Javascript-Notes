@@ -139,5 +139,13 @@ Uncaught TypeError: Assignment to constant variable.
   console.log(y); // y is not defined
   console.log(z); // z is not defined
 ```
-
-# Progress: h m s
+---
+## Operatoret
+1. #### Operatoret aritmetik: `+`, `-`, `*`, `/`, `%`, `++`, `--` 
+2. #### Operatoret per ndarje te vleres: `=`, `+=`, `-=`, `*=`, `/=`, `%=`
+3. #### Operatoret per krahasim: `<`, `>`, `<=`, `>=`, `==`, `!=`
+4. #### Operatoret logjike: `&&`, `||`, `!`
+5. #### Operatoret per bita: `&`, `|`, `^`, `~`, `<<`, `>>`, `>>>`
+6. #### Operatori kusht `? :`
+7. #### Operatori `typeof`
+# Progress: 2h02m21s
