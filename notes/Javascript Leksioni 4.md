@@ -145,10 +145,12 @@ console.log(red); // "one"
 console.log(yellow); // "two"
 console.log(green); // "three"
 ```
+##### Shembull destrukturimi.
 ```js
 const [x, y, z] = [1, 2, 3];
 console.log(x, y, z); // 1 2 3
 ```
+##### Shembull tjeter destrukturimi.
 ```js
 // Assignment separate from declaration.
 let a, b;
@@ -156,3 +158,38 @@ let a, b;
 console.log(a); // 1
 console.log(b); // 2
 ```
+#### Varianti 2
+```js
+let name, surname;
+[name, surname] = ['John', 'Smith'];
+console.log(name,surname); // ['John', 'Smith']
+```
+#### Variant me Default Values.
+```js
+let a, b; // a dhe b jane undefined.
+
+[a=5, b=7] = [1];
+console.log(a); // 1
+console.log(b); // 7
+```
+#### Swapping Variables
+###### Vlerat e variablave mund te nderrohen me njera tjetren me nje destrukturim.
+```js
+let a = 1;
+let b = 3;
+
+[a, b] = [b, a];
+console.log(a); // 3
+console.log(b); // 1
+
+const arr = [1, 2, 3];
+[arr[2], arr[1]] = [arr[1], arr[2]];
+console.log(arr); // [1, 3, 2]
+```
+#### Shembull tjeter.
+```js
+const n = [10, 30, 21];
+[n[0], n[2]] = [n[2], n[0]];
+console.log(n); // 21, 30, 10 
+```
+# Progress: 1h 2m 20s
