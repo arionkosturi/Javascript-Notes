@@ -48,3 +48,37 @@ disa rreshta
 */
 ```
 ---
+### Kodi / Deklarata / Shprehja
+1. #### Kodi - eshte set i instruksioneve te posatshme te cilat perdoren per t'i treguar kompjuterit si duhet te kryej nje detyre te caktuar.
+2. #### Deklarate - nje grup i fjaleve, numrave dhe operatoreve.
+```js
+a = 5;
+```
+3. #### Shprehje - perbehen prej disa deklaratave.
+```js
+a = b * 5;
+```
+###### Pikepresja eshte opsionale por shume e rekomanduar.
+---
+## Tipet e te dhenave
+1. #### String - text.
+```js
+'hello'
+"hello world"
+```
+2. #### Number - Numra te plote ose me presje.
+3. #### BigInt
+4. #### Boolean - true ose false, 1 ose 0, e vertete ose e gabuar.
+5. #### undefined - nje tip i te dhene kur variabla nuk eshte inicializuar:
+```js
+let a; // undefined
+```
+6. #### null - vlere boshe.
+7. #### Symbol - Tip i te dhenave instanca e te ciles eshte unike dhe e pandryshueshme.
+```js
+let value = Symbol('Hello');
+```
+8. #### Object - Cifte celes-vlere i nje koleksioni te te dhenash.
+```js
+let student = { };
+```
