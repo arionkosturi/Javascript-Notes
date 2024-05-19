@@ -255,7 +255,7 @@ console.log(y); // [2, 3]
 ```
 ## Ushtrime
 
-### Ushtrim 1.
+### Ushtrimi 1.
 ###### Sa do jete dalja e programit?
 ```js
 function f(a,b, ...args) {
@@ -269,7 +269,7 @@ console.log(x, y); //???
 ```console
 20 10
 ```
-##### Shpjegimi
+##### Shpjegimi i ushtrimit 1.
 ```js
 function f(a, b, ...args) {
   //     f(10,20, 'a', 'b')
@@ -301,7 +301,7 @@ console.log(a, b); // ???
 
 ```
 
-#### Shpjegimi
+#### Shpjegimi i ushtrimit 2.
 ```js
 function f(...args) {
      // f(1,2,3,4,5)
@@ -319,4 +319,50 @@ function f(...args) {
 const [ , , a, b] = f(1, 2, 3, 4, 5);
 
 console.log(a, b); // a: 1, b: 2
+```
+### Ushtrimi 3.
+```js
+function f(x, y) {
+  return [x, Array.from(y.toString())];
+}
+
+function g(a, b, ...args) {
+  return [f(a, b), args[0], ...args];
+}
+
+const [ , a, , b, c ] = g(10, 9876, 'a', 'b');
+
+console.log(a, b, c); // ???
+
+```
+##### Dalja
+```console
+a, b, undefined
+```
+#### Shpjegimi i ushtrimit 3.
+```js
+function f(x, y) {
+  //  f(10, 9876)
+        // '9876' -> ['9', '8', '7', '6']
+  return [x, Array.from(y.toString())];
+        // [10, ['9', '8', '7', '6']]
+}
+
+function g(a, b, ...args) {
+  // g(10, 9876, 'a', 'b')
+  // a: 10
+  // b: 9876
+  // args: ['a', 'b']
+  return [f(a, b), args[0], ...args];
+// [[10, ['9', '8', '7', '6']], 'a', 'a', 'b']
+}
+
+     // [[10, ['9', '8', '7', '6']], 'a', 'a', 'b']]
+     //  <--kjo eshte nje----=-->,  'a', ----, 'b'
+     //
+
+const [ , a, , b, c ] = g(10, 9876, 'a', 'b');
+
+console.log(a, b, c); // a, b, undefined
+
 ```

@@ -1,6 +1,11 @@
-function f(a,b, ...args) {
-  return [b, args, a];
+function f(x, y) {
+  return [x, Array.from(y.toString())];
 }
-const [x, ,y] = f(10, 20, 'a', 'b');
 
-console.log(x, y); //???
+function g(a, b, ...args) {
+  return [f(a, b), args[0], ...args];
+}
+
+const [ , a, , b, c ] = g(10, 9876, 'a', 'b');
+
+console.log(a, b, c); 
