@@ -60,13 +60,40 @@ const g = () => f;
 console.log(g()(10,2)) // 5
 ```
 #### Quiz me Funksion Rekursiv.
+###### Funksioni sum pranon si parameter nje numer n dhe duhet te ktheje si rezultat shumen e shifrave te n-se. 
+###### dmth: sum(9821) duhet te jape rezultatin 9+8+2+1 pra 20.
 ```js
-// Funksioni sum pranon si parameter nje numer n dhe duhet te ktheje si rezultat shumen e shifrave te n-se. 
-// dmth: sum(9821) duhet te jape rezultatin 9+8+2+1 pra 20.
+// Funksion Rekursiv me while
+function sum(n) {
+  let s = 0;
+  while (n > 0) {
+    s += n % 10;
+    n = parseInt(n / 10);
+  }
+  return s;
+}
 
+console.log(sum(9821)); // 20
 
 ```
 
 ```js
+// Funksion Rekursiv me string.
+function sum(n) {
+  n = n.toString(); // e kthejme ne string.
+  // stringu eshte array ['9', '8', '2', '1']
+  for(i of n) {
+    s += parseInt(i);
+  }
+  return s;
+}
+console.log(sum(9821)); // 20
 
+```
+```js
+// Zgjidhje me reduce.
+function sum(n) {
+  return Array.from(n.toString()).reduce((s,d) => s + parseInt(d));
+}
+console.log(sum(9821));
 ```
