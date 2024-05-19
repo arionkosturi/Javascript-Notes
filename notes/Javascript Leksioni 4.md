@@ -128,11 +128,12 @@ function sum(n) {
 
 console.log(sum(9821)) // 20
 ```
+---
 # Temat e reja te sessionit.
 1. ### Destrukturimi i vektoreve.
 2. ### Trajtimi i perjashtimeve.
 3. ### Template Literals.
-
+---
 ## Destrukturimi i vektoreve.
 ```js
 // Basic variable assignment.
@@ -253,8 +254,8 @@ const [x, ...y] = f();
 console.log(x); // 1
 console.log(y); // [2, 3]
 ```
+---
 ## Ushtrime
-
 ### Ushtrimi 1.
 ###### Sa do jete dalja e programit?
 ```js
@@ -285,7 +286,7 @@ const [x, ,y] = f(10, 20, 'a', 'b');
 console.log(x, y); // 20, 10
 
 ```
-
+---
 ### Ushtrimi 2.
 ```js
 function f(...args) {
@@ -320,6 +321,7 @@ const [ , , a, b] = f(1, 2, 3, 4, 5);
 
 console.log(a, b); // a: 1, b: 2
 ```
+---
 ### Ushtrimi 3.
 ```js
 function f(x, y) {
@@ -365,7 +367,7 @@ const [ , a, , b, c ] = g(10, 9876, 'a', 'b');
 
 console.log(a, b, c); // a, b, undefined
 ```
-
+---
 ### Ushtrimi 4.
 ```js
 function f(x, y, ...args) {
@@ -407,6 +409,7 @@ const [ , x, y, ,z] = f(10, 20, 1, 2, 3, 4, 5);
 
 console.log(x, y, z); // e g 10
 ```
+---
 # Njohuri te reja
 # Trajtimi i perjashtimeve
 ### Trajtimi i perjashtimeve behet permes kombinimit te celesfjaleve:
@@ -414,3 +417,26 @@ console.log(x, y, z); // e g 10
 2. #### Try
 3. #### Catch
 4. #### Finally
+---
+### Shembull me Exception Handling:
+```js
+function divide(x, y) {
+  if(y == 0) throw 'Nuk pjestohet me zero!'
+  return x / y;
+}
+  try {
+    console.log(divide(10,0));
+  } catch(e) {
+    console.log(e);
+  } finally {
+    console.log('Une jam blloku finally');
+  }
+```
+###### Dalja
+```console
+Nuk pjestohet me zero!
+Une jam blloku finally.
+```
+---
+# Template Literals
+##
