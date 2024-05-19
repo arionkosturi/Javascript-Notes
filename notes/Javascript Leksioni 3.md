@@ -475,31 +475,50 @@ Une jam numri: 6
 #### Nje loop qe nxjerr elementet e array me te medhenj se 5.
 ##### Pa perdorur filter
 ```js
-  let nums = [9,7,3,4,12,6];
+  let nums = [9, 7, 3, 4, 12, 6];
   for (n of nums) {
     if (n > 5) console.log(n);
   }
 ```
 ##### Duke perdorur filter
 ```js
-  let nums = [9,7,3,4,12,6];
+  let nums = [9, 7, 3, 4, 12, 6];
   console.log(
-    nums.filter(n=>n>5)
+    nums.filter(n => n > 5)
   );
 ```
 ##### Shembull me numrat cift
 ```js
-  let nums = [9,7,3,4,12,6];
+  let nums = [9, 7, 3, 4, 12, 6];
   console.log(
-    nums.filter(n=>n%2 == 0)
+    nums.filter(n => n%2 == 0)
   );
 ```
 ##### Shembull me numrat tek
 ```js
-  let nums = [9,7,3,4,12,6];
+  let nums = [9, 7, 3, 4, 12, 6];
   console.log(
-    nums.filter(n=>n%2 != 0)
+    nums.filter(n => n%2 != 0)
   );
 ```
-### Timestamp
-# 2h10m30s
+#### Metoda Map()
+#### Krijon nje Array te ri te populluar me rezultatet nga funksioni ku eshte therritur.
+```js
+  let nums = [9, 7, 3, 4, 12, 6];
+  console.log(
+    nums.map(n => n * 2)
+  );
+```
+# Sintaksa Spread (...) / Sintaksa per Zgjerim (...)
+#### Sintaksa spread (...) lejon qe nje objekt i iterueshem si string apo array, te mund te zgjerohet ne vende ku nuk priten argumente (per funksione) ose elemente (per array). 
+#### Ne Object Literal, sintaksa spread liston vetite e objektit shton ciftet celes-vlere ne objektin qe krijohet.
+
+#### Sintaksa Spread duket identike si Sintaksa Rest. Por ne ide jane komplet ndryshe. Sintaksa Spread "zgjeron" nje array ne elementet e tij, ndersa Sintaksa Rest mbledh disa elemente dhe i "ngjesh" ne nje element te vetem.
+
+
+#### Shembull
+```js
+  let nums = [9, 7, 3, 4, 12, 6];
+  let m = [4, 5, 20];
+
+```
