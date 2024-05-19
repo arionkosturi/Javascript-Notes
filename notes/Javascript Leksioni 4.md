@@ -192,4 +192,65 @@ const n = [10, 30, 21];
 [n[0], n[2]] = [n[2], n[0]];
 console.log(n); // 21, 30, 10 
 ```
-# Progress: 1h 2m 20s
+#### Destrukturimi i nje array te kthyer nga nje funksion.
+```js
+function f() {
+  return [1, 2];
+}
+let a, b;
+[a, b] = f();
+console.log(a); // 1
+console.log(b); // 2
+```
+#### Shembull
+```js
+function f() {
+  return [false, '10', 100];
+}
+let b, s, n;
+[b, s, n] = f();
+
+console.log(b, s, n);
+```
+##### Dalja
+```console
+false '10' 100
+```
+#### Injorimi i vlerave ne destrukturim
+```js
+function f() {
+  return [1, 2, 3];
+}
+
+const [a, ,b] = f();
+console.log(a); // 1
+console.log(b); // 3
+
+const [c] = f();
+console.log(c); // 1
+```
+##### Gjithashtu mund te injorojme te gjitha vlerat.
+```js
+[,,,] = f();
+```
+#### Shembull me destrukturim
+```js
+function student() {
+  return ['John', '90/2023', [9,10,8,8]];
+}
+
+const [name, ,grades] = student();
+console.log(name, grades); // John, [9, 10, 8, 8]
+```
+#### Destrukturim me elemenentet e mbetura.
+```js
+function f() {
+  return [1, 2, 3];
+}
+
+const [x, ...y] = f();
+
+console.log(x); // 1
+console.log(y); // [2, 3]
+
+```
