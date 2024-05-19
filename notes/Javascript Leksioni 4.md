@@ -97,3 +97,29 @@ function sum(n) {
 }
 console.log(sum(9821));
 ```
+
+```js
+// Zgjidhje me for loop.
+function sum(n) {
+  let s = 0;
+  n = n.toString();
+  for(d of n) {
+    s += parseInt(d);
+  }
+  return s;
+}
+console.log(sum(9821)); // 20
+
+```
+#### Zgjidhe me funksion rekursiv.
+```js
+function sum(n) {
+  n = n.toString;
+  // base case
+  if (n.length == 0) return 0;
+  // recursion
+  return parseInt(n[0]) + sum(n.slice(1));
+}
+
+console.log(sum(9821)) // 20
+```
