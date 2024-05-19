@@ -1,0 +1,1 @@
+# Shenime dhe Ushtrime nga Javascript, Sesioni 24.

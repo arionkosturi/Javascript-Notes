@@ -528,4 +528,16 @@ Une jam numri: 6
   let a1_dhe_a2_spread = [...a1, ...a2]; // [1, 2, 10, 20]
   console.log(a1_dhe_a2_spread); // [1, 2, 10, 20]
 ```
-####
+#### Shembull
+```js
+  let x = [1, 2];
+  let y = () => ['a', 'b'];
+  const z = [false];
+  console.log(
+    [...y(), z, x]
+  )
+```
+##### Dalja
+```console
+['a','b', [false], [1, 2]]
+```
