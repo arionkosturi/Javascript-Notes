@@ -439,4 +439,30 @@ Une jam blloku finally.
 ```
 ---
 # Template Literals
-##
+### Template Literals mundesojne perdorimin e shprehjeve brenda thonjezave dhe mund te shkruhen ne me shume rreshta.
+#### Per Template Literals perdoren backticks \` `
+```js
+let name = 'Arion';
+// Shprehje e thjeshte
+console.log('Hello there ' + name);
+// Me template literals
+console.log(`Hello there ${name}`);
+```
+---
+```js
+let name = 'Arion';
+// Shprehje e thjeshte
+console.log('Hello there ' + name + ' some other text.');
+// Me template literals
+console.log(`Hello there ${name} some other text.`);
+```
+#### Ushtrim Template Literals dhe destrukturim.
+```js
+function f(a, b, ...args) {
+  return `${a+args[0]}${b}`;
+}
+  const [x, y, z] = Array.from(f('a', 10, 'ge', 's1', ;b));
+  // x
+  // y
+  // z 
+```
