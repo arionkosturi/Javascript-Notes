@@ -168,9 +168,11 @@ console.log(y); // 1.5
   console.log(10 < 11); // True
   console.log(10 >= 11); // False
   console.log(10 <= 10); // True
-  console.log(10 == '10'); //
-  console.log(10 != '10'); //
+  console.log(10 == '10'); // True - '10' konvertohet ne numer. Per te bere krahasim strict perdorim `===`.
+  console.log(10 != '10'); // False
+```
+##### Shembull me operatoret llogjike:
+```js
 
 ```
-
-# Progress: 2h03m21s
+# Progress: 2h11m04s
