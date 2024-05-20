@@ -175,6 +175,13 @@ console.log(10 != '10'); // False
 ```
 ##### Shembull me operatoret llogjike:
 ```js
+sh1 = (10 > 4);
+sh2 = (10 == '10');
+
+console.log(sh1 && sh2); //
+console.log(sh1 || sh2); //
+console.log(!sh2); //
+
 
 ```
 # Progress: 2h11m04s
