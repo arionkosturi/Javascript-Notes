@@ -148,4 +148,29 @@ Uncaught TypeError: Assignment to constant variable.
 5. #### Operatoret per bita: `&`, `|`, `^`, `~`, `<<`, `>>`, `>>>`
 6. #### Operatori kusht `? :`
 7. #### Operatori `typeof`
-# Progress: 2h02m21s
+
+##### Shembull me operatore te ndarjes se vleres
+```js
+x = 10;
+y = 3;
+// x=10 y=3
+x += y; // 10 += 3 x: 13
+y /= 2; // 3 / 2 = 1.5 
+x %= 2; // 13 %2 6 mbetja 1
+
+console.log(x); // 1
+console.log(y); // 1.5
+```
+##### Shembull me operatoret per krahasim:
+```js
+// >, <, >=, <=, ==, !=
+  console.log(10 > 11); // False
+  console.log(10 < 11); // True
+  console.log(10 >= 11); // False
+  console.log(10 <= 10); // True
+  console.log(10 == '10'); //
+  console.log(10 != '10'); //
+
+```
+
+# Progress: 2h03m21s
