@@ -1,5 +1,6 @@
-# Shenime dhe Ushtrime nga Javascript, Leksioni 3 - Sesioni 23.
-
+---
+## Shenime dhe Ushtrime nga Javascript, Leksioni 3 Sesioni 23.
+---
 ## Quiz 1
 #### Nje Unaze/loop qe printon numrat cift nga 0 deri ne "n"
 ```js

@@ -1,5 +1,6 @@
-# Shenime dhe Ushtrime nga Javascript, Leksioni 4 Sesioni 24.
-
+---
+## Shenime dhe Ushtrime nga Javascript, Leksioni 4 Sesioni 24.
+---
 ### Quiz me njohurite nga sessioni i meparshem.
 #### Funksionet.
 1. ##### Fusha e qasshmerise 
