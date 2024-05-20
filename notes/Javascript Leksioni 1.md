@@ -175,13 +175,40 @@ console.log(10 != '10'); // False
 ```
 ##### Shembull me operatoret llogjike:
 ```js
-sh1 = (10 > 4);
-sh2 = (10 == '10');
+sh1 = (10 > 4); // True - 1
+sh2 = (10 == '10'); // True - 1
 
-console.log(sh1 && sh2); //
-console.log(sh1 || sh2); //
-console.log(!sh2); //
-
-
+console.log(sh1 && sh2); // 1 && 1 -> 1
+console.log(sh1 || sh2); // 1 || 1 -> 1
+console.log(!sh2); // 0
 ```
-# Progress: 2h11m04s
+##### Shembull me operatoret me bita:
+```js
+x = 4;
+y = 7;
+// x = 1  0  0
+// y = 1  1  1
+// &
+//     1  0  0
+console.log(x & y); // 4
+// x = 1  0  0
+// y = 1  1  1
+// OR |
+//     1  1  1
+console.log(x | y); // 7
+```
+##### Shembull me operatoret kusht ose ternar:
+###### Nese kushti plotesohet atehere ekzekutohet kodi pas `?` Nese kushti nuk plotesohet atehere ekzekutohet kodi pas `:`
+```js
+// Nese kushti plotesohet atehere ekzekutohet kodi pas `?`
+// Nese kushti nuk plotesohet atehere ekzekutohet kodi pas `:`
+
+console.log(10 > 12) ? 'Po' : 'Jo'; // Jo
+```
+##### Shembull me operatorin `typeof` 
+```js
+console.log(typeof(x)); // undefined
+console.log(typeof('abc')); // String
+console.log(typeof(100)); // Number
+console.log(typeof(false)); // Boolean
+```
