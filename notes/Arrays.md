@@ -76,3 +76,21 @@ console.log(firstNumber); // 0
 numbers.splice(4,1);
 console.log(numbers); // [1, 2, 4, 8]
 ```
+
+## Array Loops
+```js
+let list = [
+  'Milk',
+  'Eggs',
+  'Butter',
+  'Bread',
+  'Bacon'
+];
+
+for (let index = 0; i < list.length; index++) {
+  html += `<li>${list[index]}</li>`
+
+}
+
+document.getElementById('list').innerHTML = html;
+```
