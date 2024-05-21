@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playground</title>
+    <link rel="icon" type="image/x-icon" href="/src/javascript-js.svg" />
+    <link rel="stylesheet" href="build.css?v1.0" />
+  </head>
+  <script type="module">
+    // Import element definition
+    import ZeroMd from "https://cdn.jsdelivr.net/npm/zero-md@3";
+    // Register
+    customElements.define("zero-md", ZeroMd);
+  </script>
+  <body class="bg-white dark:bg-brandDark">
+    <div
+      class="flex items-center mx-auto py-4 whitespace-nowrap overflow-x-auto container"
+    >
+      <a href="/" class="text-gray-600 dark:text-white">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-5 h-5"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
+          />
+        </svg>
+      </a>
+
+      <span class="text-gray-500 dark:text-white">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-5 h-5"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </span>
+
+      <a
+        href="/javascript.html"
+        class="text-gray-600 dark:text-white hover:underline"
+      >
+        Javascript
+      </a>
+
+      <span class="text-gray-500 dark:text-white rtl:-scale-x-100">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-5 h-5"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </span>
+
+      <a
+        href="js-playground.html"
+        class="text-gray-600 dark:text-white hover:underline"
+      >
+        Playground
+      </a>
+
+      <span class="text-gray-500 dark:text-white rtl:-scale-x-100">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+        </svg>
+    </span>
+ 
+
+    </div>
+    <div class="mx-auto container">
+   
+      <iframe
+      width="880"
+      height="425"
+      frameborder="0"
+      src="https://unpkg.com/javascript-playgrounds@1.2.5/public/index.html#data=%7B%22code%22%3A%22console.log('Pershendetje%2C%20Mysafir!')%5Cn%22%7D"
+    ></iframe>
+  </body>
+</html>
