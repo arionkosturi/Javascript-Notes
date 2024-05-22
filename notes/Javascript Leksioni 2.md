@@ -2,8 +2,8 @@
 ## Shenime dhe Ushtrime nga Javascript, Leksioni 2 Sesioni 22.
 ---
 ### Quiz
-
-##### Qasshmeria e variablave
+##### Quiz 1
+###### Qasshmeria e variablave
 ```js
 const x = 100
 
@@ -18,7 +18,8 @@ const x = 100
 console.log(x + y, z) // ???
 ```
 
-##### Me operatoret llogjike
+##### Quiz 2
+###### Me operatoret llogjike
 ```js
 x = 100             // x: 100
 let y = 23          // y: 24
@@ -31,3 +32,36 @@ y %= 6              // 24 / 6     y: 0
 // x: 77, y: 0
 console.log(x, y) // x: 77, y: 0
 ```
+##### Quiz 3.a
+```js
+let y;               
+var x = y + 1;       
+
+ y = 'test'
+ x = 100
+
+
+console.log(x + y) // 100test
+```
+##### Quiz 3.b
+```js
+let y;               
+var x = y + 1;       
+
+// y = 'test'
+// x = 100
+console.log(x + typeof(y)) // NaN undefined
+```
+##### Quiz 4
+###### Me operatoret per krahasim:
+```js
+let x = 7
+let y = 2
+
+console.log(
+    (x & y) > y
+) 
+
+// FALSE
+```
+# Progres: 0h:22m:00s
