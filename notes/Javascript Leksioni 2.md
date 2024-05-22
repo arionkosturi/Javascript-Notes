@@ -79,4 +79,115 @@ console.log( (x & y) > y ); // FALSE
 + Komandat `break` dhe `continue`
 + Funksionet  
 
-# Progres: 0h:30m:00s
+#### Kushtet
++ Kushtet mundesojne degezimin e kodit
++ Gjithmone duhet te kemi te pakten nje kusht
++ JavaScript mundeson degezimin e kodit permes:
+  + if
+  + switch
+
+#### Shembuj me `if`
+```js
+username = 'admin'
+password = '12345'
+
+// (nese kushti plotesohet) { kodi TRUE } ne te kunderten { kodi FALSE }
+if(username == 'admin') {
+    console.log('Dashboard') // Dashboard
+} else {
+    console.log('Login')
+}
+```
+Shembull tjeter me `if`
+```js
+let x = 120
+let y = 21
+let z = 21.2
+
+// me i madhi?
+
+if((x > y) && (x > z)) {
+    console.log(x, ' eshte me i madhi')
+}
+  else if((y > x) && (y > z)) {
+    console.log(y, ' eshte me i madhi') // 21 eshte me i madhi
+  }
+   else {
+      console.log(z, ' eshte me i madhi')
+   }
+```
+#### Shembull me `switch`
+```js
+console.log("MENU\n1. Pije\n2. Ushqim\n3. Tjeter")
+opcioni = 1
+
+switch(opcioni) {
+    case 1:
+        console.log('Porositet pije') // Porositet pije
+        y = 120
+        if(y > 10 && y < 30) {
+            console.log('Numer ndermjet 10 dhe 30')
+        }
+        break 
+    case 2:
+        console.log('Porositet ushqim')
+        break
+    case 3:
+        console.log('Porositet tjeter')
+        break
+    default:
+        console.log('GABIM')
+        break
+}
+```
+##### Duhet mbajtur mend qe `if` perdor kushte (shprehje) ndersa `switch` perdor vlera specifike.
+---
+
+## Unazat
++ for
++ while
++ do-while
+
+Te printojme numrat nga 1 ne 10 me unazat `for`, `while` dhe `do-while`  
+  
+  Me `for`:
+
+```js
+// 1..10
+
+for(i = 1; i <= 10; i++) {
+    console.log(i)
+}
+
+// infinite loop
+// for(;;) {
+//     code
+// }
+
+```
+Me `while`:
+```js
+// 1..10
+i = 11
+
+while(i <= 10) {
+    console.log(i)
+    i++
+}
+
+// infinite loop
+// while(true) {
+//     code
+// }
+```
+Me `do-while`:
+```js
+// 1..10 
+i = 11
+
+do {
+    console.log(i)
+    i++
+}while(i <= 10);
+```
+# Progres: 1h:25m:00s
