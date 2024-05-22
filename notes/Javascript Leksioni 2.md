@@ -154,9 +154,8 @@ Te printojme numrat nga 1 ne 10 me unazat `for`, `while` dhe `do-while`
 
 ```js
 // 1..10
-
 for(i = 1; i <= 10; i++) {
-    console.log(i)
+    console.log(i) // 1 2 3 4 5 6 7 8 9 10
 }
 
 // infinite loop
@@ -168,10 +167,10 @@ for(i = 1; i <= 10; i++) {
 Me `while`:
 ```js
 // 1..10
-i = 11
+i = 1
 
 while(i <= 10) {
-    console.log(i)
+    console.log(i) // 1 2 3 4 5 6 7 8 9 10
     i++
 }
 
@@ -186,8 +185,12 @@ Me `do-while`:
 i = 11
 
 do {
-    console.log(i)
+    console.log(i) // 11
     i++
 }while(i <= 10);
 ```
-# Progres: 1h:25m:00s
+###### Duhet mbajtur mend qe `do-while` e ekzekuton nje here programin pastaj kontrollon kushtin. Pra marxhi i gabimit eshte 1.
+
+### `break` dhe `continue`
+
+# Progres: 1h:36m:20s
