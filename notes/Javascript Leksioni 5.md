@@ -125,3 +125,10 @@ const [a, b, ,c] = y
 // c=undefined
 console.log(a, b, c)
 ```
+
+
+
+```js
+
+
+```
