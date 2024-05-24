@@ -128,7 +128,19 @@ console.log(
 )
 
 ```
-Shembull:
+### Document Object Model - DOM
+#### Cfare eshte HTML DOM?
+- DOM eshte akronim per Document Object Model
+- DOM paraqet nje nderfaqe (interface) e cila mundeson qasje dhe manipulim te elementeve.
+- Definon:
+  - Te gjitha elementet e HTML si objekte.
+  - Karakteristikat e elementeve (attributes).
+  - Sjelljet e elementeve (methods).
+  - Ngjarjet (events) qe mund te ndodhin
+  
+  
+  
+Ushtrim me regex:
 ```js
 // kur thirret f - s eshte stringu, p paterna e cila nese gjindet ne s atehere zevendesohet me r
 
@@ -141,16 +153,10 @@ console.log(
 )
 // 'Une jam Arti jam x vjec'
 ```
-### Document Object Model - DOM
-#### Cfare eshte HTML DOM?
-- DOM eshte akronim per Document Object Model
-- DOM paraqet nje nderfaqe (interface) e cila mundeson qasje dhe manipulim te elementeve.
-- Definon:
-  - Te gjitha elementet e HTML si objekte.
-  - Karakteristikat e elementeve (attributes).
-  - Sjelljet e elementeve (methods).
-  - Ngjarjet (events) qe mund te ndodhin
+### DOM
+#### Qasja ne elementet HTML
+
 ```html
 <div>
 ```
-# Progress: 0h:57m:37s/2h:17m:59s
+# Progress: 1h:10m:00Ss/2h:17m:59s
