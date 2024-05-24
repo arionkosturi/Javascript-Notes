@@ -242,4 +242,42 @@ console.log(r); // 120
 + Si dhe funksione te cilat kthejne vlere.
 + Ne menyre qe te shohim daljen e funksionit ne duhet ta aktivizojme te njejtin.
 + Aktivizimi i funksionit behet permes emrit dhe kllapave `emriFunksionit();`
-# Progres: 2h:03m:20s
+```js
+function FUNCTION_NAME() {
+    // CODE ...
+}
+```
+
+```js
+function FUNCTION_NAME() {
+    return VALUE;
+}
+```
+
+```js
+function FUNCTION_NAME(ARG1, ARG2, ...ARGN) {
+    // CODE
+}
+```
+```js
+function FUNCTION_NAME(ARG1, ARG2, ...ARGN) {
+    return VALUE;
+}
+```
+nje shembull:
+```js
+function hi(name) {
+    console.log('Pershendetje' + name);
+}
+// aktivizimi
+hi(); // Pershendetje undefined
+hi('Arion'); // Pershendetje Arion
+```
+```js
+function hi(name = 'mysafir') {
+    console.log('Pershendetje' + name);
+}
+// aktivizimi
+hi(); // Pershendetje mysafir
+hi('Arion'); // Pershendetje Arion
+```
