@@ -1,12 +1,13 @@
-const PI = 3.14;
-const circle = {
-    r: 10,
-    d: 20,
-    
-    area: function() {
-        return PI * r * r;
-    }
+const o = {
+    x: 'a',
+    r: 'a' + null,
+    z: this.r + undefined
 }
 
-const {r, d, area} = circle
-console.log(r,d,area());
+// a: a, r: anull z: NaN
+// console.log(o)
+
+// const s   - e cila e merr vleren e celesit s    / celes s nuk kemi   ----> undefined
+const {x: a, z: b} = o
+
+console.log(a, b); 

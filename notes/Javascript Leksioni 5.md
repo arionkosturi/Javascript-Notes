@@ -294,5 +294,127 @@ const {a=10, b=5} = {a: 3};
 console.log(a); // 3
 console.log(b); // 5
 ```
-# Progress: 1h:45m:33s
-#        of 2h:19m:12s
+```js
+const {a: x = 100, b: y = 20} = {b: 200}
+
+console.log(x, y) // 100 200
+```
+## Q/A
+# Ushtrime
+Ushtrimi 1:
+```js
+const o = {
+    x: 'a',
+    r: 'a' + null,
+    z: this.r + undefined
+}
+
+// a: a, r: anull z: nan
+// console.log(o)
+
+// const s   - e cila e merr vleren e celesit s    / celes s nuk kemi   ----> undefined
+const {x: a, z: b} = o
+
+console.log(a, b); // a, Nan
+```
+Ushtrimi 2
+```js
+function f(x, z, ...y) {
+    // f('a', 'c', 'g', 'i', 'b')
+    // x: 'a'
+    // z: 'c'
+    // y: ['g', 'i', 'b']
+    //      0    1    2
+    return {
+        x,                   // x: 'a'
+        a: z,                // a: 'c'
+        [y[0]]: [...y]       // g: ['g', 'i', 'b']
+    }
+}
+
+/*
+    {
+        x: 'a'
+        a: 'c'
+        g: ['g', 'i', 'b']
+    }
+*/
+
+// deshifru cilat jane celesat e objektit qe kthehet nga funksioni
+// me argumentet ne vijim f('a', 'c', 'g', 'i', 'b')
+
+const {x, a, g} = f('a', 'c', 'g', 'i', 'b')
+
+// // x, a, ? - celesit te trete
+
+console.log(x, a, g)
+```
+Ushtrim 3:
+```js
+function f(x, a, ...c) {
+    // f(10, 'te', 'a', 'g', 'j')
+    // x: 10
+    // a: 'te'
+    // c: ['a', 'g', 'j']
+    return function() {
+        return {
+            d: c,
+            g: a
+        }
+    }
+}
+
+function g() {
+    //     [{d: ['a', 'g', 'j'], g: 'te'}]
+    return [f(10, 'te', 'a', 'g', 'j')()]
+}
+
+
+//            [{d: ['a', 'g', 'j'], g: 'te'}]
+const [ ,x] = g()
+
+console.log(x) // ?
+```
+Ushtrim 4:
+```js
+function f(x, a, ...c) {
+    // f(10, 'te', 'a', 'g', 'j')
+    // x: 10
+    // a: 'te'
+    // c: ['a', 'g', 'j']
+    return function() {
+        return {
+            d: c,
+            g: a
+        }
+    }
+    // {d: ['a', 'g', 'j'], g: 'te'}
+}
+
+function ga() {
+    return {
+        // {d: ['a', 'g', 'j'], g: 'te'}
+        ...f(10, 'te', 'a', 'g', 'j')(),
+        d: 'a',
+        g: [1,2]
+    }
+    /*      
+        {
+            d: ['a', 'g', 'j'],
+            g: 'te',
+            d: 'a',
+            g: [1, 2]
+        }
+
+        {
+            d: 'a',
+            g: [1, 2]
+        }
+    */
+}
+
+
+const {d: x, g} = ga()
+
+console.log(x, g); // a [1, 2]
+```
