@@ -246,5 +246,53 @@ let arti = {
 console.log(arti.o)
 ```
 ### Destrukturimi i Objekteve
+Basic assgnment:
+```js
+const user = {
+    id: 42,
+    is_verified: true
+}
+const {id, is_verified} = user;
 
-# Progress: 1h36m33s/2h:19m:12s
+console.log(id); // 42
+console.log(is_verified); // true
+```
+Shembull me destrukturimi i objekteve.  
+Siperfaqja e rrethit:
+```js
+const PI = 3.14;
+const circle = {
+    r: 10,
+    d: 20,
+    area: function() {
+        return PI * r * r;
+    }
+}
+
+const {r, d, area} = circle
+console.log(r,d,area());
+```
+Assignment without declaration:
+```js
+let a, b;
+
+({a, b} = {a: 1, b: 2});
+```
+Shembull:
+```js
+let x, y;
+const o = {x: 100, y: 200};
+
+({x: a, y: b} = o)
+
+console.log(a, b); // [100, 200]
+```
+Destrukturimi me vlera paraprake:
+```js
+const {a=10, b=5} = {a: 3};
+
+console.log(a); // 3
+console.log(b); // 5
+```
+# Progress: 1h:45m:33s
+#        of 2h:19m:12s
