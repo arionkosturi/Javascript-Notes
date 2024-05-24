@@ -192,5 +192,36 @@ do {
 ###### Duhet mbajtur mend qe `do-while` e ekzekuton nje here programin pastaj kontrollon kushtin. Pra marxhi i gabimit eshte 1.
 
 ### `break` dhe `continue`
+`break` ndalon ekszekutimin e e unazes.  
+`continue` e kapercen nje hap ekzekutimi.
+```js
+for(i = 1; i <= 10; i++) {
+    // if(i == 7) break
+    
+    if(i == 7) continue //1 2 3 4 5 6 8 9 10
 
-# Progres: 1h:36m:20s
+    console.log(i)
+}
+```
+### Quiz
+#### Ushtrimi 1
+Te shkruhet programi i cili permes perdorimit te unazes `for` llogarit shprehjen a^b.  
+Shembull nese a=2 dhe b=3 atehere dalja e programit duhet te jete 8.
+```js
+        let a = 2
+        let b = 3
+        let r = 1
+
+        for(i = 1; i <= b; i++) // kemi b perseritje te kodit ne block
+        {
+            r *= a
+        }
+        console.log(r); // 8
+
+```
+#### Ushtrimi 2
+Te shkruhet programi i cili permes perdorimit te unazes `while` logarit x! (faktorialin e numrit x)  
+Shembull:  
+Nese x=5 atehere dalja duhet te jete 120. (dmth 5x4x3x2x1) 
+
+# Progres: 1h:47m:20s
