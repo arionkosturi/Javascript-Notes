@@ -129,7 +129,7 @@ console.log(a, b, c)
 + Programimi i orientuar ne objekte (OOP).
 + Object Literal.
 + Destrukturimi i objekteve.
-+ Atributet e kaluara.
++ Atributet e kalkuara.
 
 #### Klasat
 + Klasat ne JavaScript definohen permes celesfjales `class`, pason emri i klases, kllapat gjarperuese dhe brenda tyre trupi i klases.
@@ -139,3 +139,112 @@ class Person {
 }
 ```
 + Klasa ka nje metode speciale e cila njihet si konstruktor dhe definohet me constructor() - shkrepet sa  here qe krijohet nje objekt i ri nga ajo klase.
+```js
+class Person {
+    // properties / veti te klases
+    emri = "John"
+    mbiemri = "Smith"
+    mosha = 24
+    
+    // funksione brenda klases quhen metoda (methods)
+    te_dhenat() {
+        // this.   i referesohet klases aktuale - ne kete rast Person
+        return `${this.emri} ${this.mbiemri} mosha: ${this.mosha}`
+    }
+}
+
+obj = new Person()    // kemi krijuar nje objekt nga klasa person
+
+
+// nese deshirojme me ju qase nje vetie te caktuar perdorim
+// emrin e objektit pike (.) emri i vetise
+console.log(obj.te_dhenat())
+
+```
+Duke perdorur konstruktoret:
+```js
+class Person {
+    constructor(n, s, a) {
+        this.name = n
+        this.surname = s
+        this.age = a
+    }
+    
+    get_person() {
+        // this.   i referesohet klases aktuale - ne kete rast Person
+        return `${this.name} ${this.surname} mosha: ${this.age}`
+    }
+}
+
+arti = new Person("Arti", "Abazi", 15)  
+arta = new Person("Arta", "Krasniqi", 25)    
+
+
+console.log(arti.get_person())
+console.log(arta.get_person())
+
+```
++ Nje klase gjithashtu mund te kete edhe metoda statike - qe dmth se munt e ekzekutohen pa krijuar instance te klases ku eshte definuar:
+```js
+static address() {
+  console.log('PO Box 100');
+}
+// Thirrja (ekzekutimi) i metodes statike:
+Person.address();
+```
+Shembull me metoden statike:
+
+```js
+class Matematika {
+    static fuqia(x, y) {
+        let r = 1
+        for(let i = 0; i < y; i++) {
+            r *= x
+        }
+        return r
+    }
+}
+
+console.log(Matematika.fuqia(2, 4))
+```
+### Object Literal
++ JavaScript object literal eshte liste e cifteve emer-vlere te mbeshtjella me kllapa gjarperore.
++ Object Literal enkapsulon te dhenat ne nje pakete.
++ Na mundeson qe te minimizojme numrin e variablave globale te cilat shpesh dine te krijojne probleme kur jane te shumta ne numer.
+
+#### Object Literal Syntax
+Object Literals definohen duke perdorur keto rregulla sintaksore:
++  Dy pikat `:` ndan emrin e vetise nga vlera.
++  Nje presje `,` ndan cdo cift emer-vlere.
++  Nuk duhet presje `,` ne fund te ciftit te fundit.
+
+Ushtrim me Object Literal"
+```js
+x = 'abc' + undefined
+
+// name, age, get_data
+let arti = {
+    name: 'Arti',
+    age: 15,
+    get_data: function() {
+        return `${this.name} ka moshen: ${this.age}`
+    },
+    // props te re e cila vleren e ka daljen e shprehjes x
+    [x]: "Vlera e comp. prop.",
+    o: {
+        x: 100,
+        y: 200
+    }
+}
+
+// name, age, get_data, abcundefined
+
+// console.log(arti.name)
+// console.log(arti.age)
+// console.log(arti.get_data) 
+// console.log(arti.abcundefined)
+console.log(arti.o)
+```
+### Destrukturimi i Objekteve
+
+# Progress: 1h36m33s
