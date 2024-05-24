@@ -1,0 +1,1 @@
+[How to Filter an Array in JavaScript – JS Filtering for Arrays and Objects] -(https://www.freecodecamp.org/news/filter-arrays-in-javascript/)
