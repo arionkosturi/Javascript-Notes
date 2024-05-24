@@ -80,7 +80,34 @@ const {x, a} = f('e')
 console.log(x[0][1]) // x[0][1]   p
 console.log(a)
 ```
-Ushtrim 4 me Regular Expressions - regex
+## Temat e reja:
+- Regular Expressions
+- Document Object Model (DOM)
+- Manipulimi i DOM-it
+- Events
+- Modulet (Krijimi, eksportimi dhe importimi)
+
+### Regular Expressions 
+
+```js
+sentence = "Regular 122 expressions are 2347689 patterns used to match character combinations in strings. In 146 JavaScript, regular 2342 expressions 121382 are also 164 objects."
+
+// si e shkruajme nje funksion i cili i gjene te gjitha numrat?
+
+function nums(s) {
+   words = s.split(" ")
+   ns = []
+     for(w of words) {
+        if(w >= 10 && w <= 99) {
+             ns.push(w)
+         }
+     }
+     return ns
+ }
+
+ console.log(nums(sentence))
+```
+Shembull me Regular Expressions - regex:
 ```js
 // kur thirret f - s eshte stringu, p paterna e cila nese gjindet ne s atehere zevendesohet me r
 
@@ -93,4 +120,4 @@ console.log(
 )
 // 'Une jam Arti jam x vjec'
 ```
-# Progress: 0h:00m:00s/2h:17m:59s
+# Progress: 0h:45m:00s/2h:17m:59s
