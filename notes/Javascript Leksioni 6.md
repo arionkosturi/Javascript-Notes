@@ -107,7 +107,28 @@ function nums(s) {
 
  console.log(nums(sentence))
 ```
-Shembull me Regular Expressions - regex:
+Per ta zgjidhur me lehte, ne perdorim regular expressions:
+```js
+sentence = "Regular 122 expressions are 2347689 patterns used to match character combinations in strings. In 146 JavaScript, regular 2342 expressions 121382 are also 164 objects."
+
+
+ const regexp = /\d{1,}/g;
+
+ console.log(
+     sentence.match(regexp)
+ )
+```
+Shembull tjeter me regex
+```js
+sentence = "Regular 12.05.2021 expressions are 24.07.1990 patterns used to match character combinations in strings. In 146 JavaScript, regular 2342 expressions 121382 are also 16.09.1921 objects."
+
+
+console.log(
+    sentence.replace(/\d{2}\.\d{2}\.\d{4}/g, '....')
+)
+
+```
+Shembull:
 ```js
 // kur thirret f - s eshte stringu, p paterna e cila nese gjindet ne s atehere zevendesohet me r
 
@@ -120,4 +141,16 @@ console.log(
 )
 // 'Une jam Arti jam x vjec'
 ```
-# Progress: 0h:45m:00s/2h:17m:59s
+### Document Object Model - DOM
+#### Cfare eshte HTML DOM?
+- DOM eshte akronim per Document Object Model
+- DOM paraqet nje nderfaqe (interface) e cila mundeson qasje dhe manipulim te elementeve.
+- Definon:
+  - Te gjitha elementet e HTML si objekte.
+  - Karakteristikat e elementeve (attributes).
+  - Sjelljet e elementeve (methods).
+  - Ngjarjet (events) qe mund te ndodhin
+```html
+<div>
+```
+# Progress: 0h:57m:37s/2h:17m:59s
