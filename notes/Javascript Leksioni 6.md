@@ -157,6 +157,8 @@ console.log(
 #### Qasja ne elementet HTML
 
 ```html
-<div>
+<body>
+  <h1>Welcome</h1>
+</body>
 ```
 # Progress: 1h:10m:00Ss/2h:17m:59s
