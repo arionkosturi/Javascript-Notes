@@ -247,4 +247,4 @@ console.log(arti.o)
 ```
 ### Destrukturimi i Objekteve
 
-# Progress: 1h36m33s
+# Progress: 1h36m33s/2h:19m:12s
