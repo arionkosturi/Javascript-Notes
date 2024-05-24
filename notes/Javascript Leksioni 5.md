@@ -125,10 +125,17 @@ const [a, b, ,c] = y
 // c=undefined
 console.log(a, b, c)
 ```
+### TEMAT E REJA:
++ Programimi i orientuar ne objekte (OOP).
++ Object Literal.
++ Destrukturimi i objekteve.
++ Atributet e kaluara.
 
-
-
+#### Klasat
++ Klasat ne JavaScript definohen permes celesfjales `class`, pason emri i klases, kllapat gjarperuese dhe brenda tyre trupi i klases.
 ```js
-
-
+class Person {
+  //  class body
+}
 ```
++ Klasa ka nje metode speciale e cila njihet si konstruktor dhe definohet me constructor() - shkrepet sa  here qe krijohet nje objekt i ri nga ajo klase.
