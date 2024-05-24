@@ -155,10 +155,80 @@ console.log(
 ```
 ### DOM
 #### Qasja ne elementet HTML
-
+Per tu qasur ne elementet e HTML perdorim:
+- Permes ID - getElementById.
+- Permes emrit te Tagut - getElementsByTagName. 
+- Permes klases - getElementsByClassName. 
+- Permes selektorit - querySelector.
+- querySelectorAll
 ```html
 <body>
   <h1>Welcome</h1>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci doloribus obcaecati aut numquam voluptate, <a href="#" class="btn">repellat</a> at quibusdam, laboriosam assumenda aspernatur consequuntur vitae dignissimos! Aspernatur, explicabo. Consectetur sit nesciunt accusantium dolorum.</p>
+<a href="/read-more-text" class="btn">Read more<a>
+<a href="/close-window" id="close-btn" class="btn">Close</a>
+    <script>
+        // permes id-se
+        // const close_btn = document.getElementById('close-btn')
+        // console.log(close_btn)
+
+        // permes emrit te tagut
+        // const links = document.getElementsByTagName('a')
+        // console.log(links)
+        // for(link of links) {
+        //     console.log(link.getAttribute('href'))
+        // }
+
+        // permes klases
+        // const btns = document.getElementsByClassName('btn')
+        // for(btn of btns) {
+        //     console.log(btn.innerHTML)
+        // }
+
+        // permes selektorit (ngjajshem si ne css)
+        // const btn = document.querySelector('.btn')
+        // console.log(btn)
+        const btns = document.querySelectorAll('.btn')
+        console.log(btns)
+    </script>
 </body>
 ```
-# Progress: 1h:10m:00Ss/2h:17m:59s
+
+
+Nje shembull me CRUD (Create, Read, Update, Delete):
+```html
+<body>
+    <ul class="menu">
+        <li>Lorem ipsum dolor sit. 1</li>
+        <li class="second">Lorem ipsum dolor sit. 2</li>
+        <li>111 Lorem ipsum dolor sit.</li>
+        <li id="last">Lorem ipsum dolor sit.</li>
+    </ul>
+
+    <script>
+        // Create: shto nje li element te ri ne liste
+        const ul = document.querySelector('ul.menu')
+        const li_element = document.createElement('li')
+        const li_text = document.createTextNode('Une jam elementi i fundit ne liste')
+        li_element.append(li_text)
+        ul.append(li_element)
+
+        // Read 
+        // getElementById, getElementsByTagName, getElementsByClassName, querySelector, querySelectorAll
+
+        // Update
+        const third_li = document.querySelector('li:nth-child(3)')
+        third_li.innerHTML = "Permbajtja e re e elementit"
+        third_li.style.color = 'red'
+        third_li.style.border = '1px solid green'
+
+        // Delete
+        const first_elem = document.querySelector('li:nth-child(1)')
+        first_elem.remove()
+    </script>
+</body>
+```
+### Eventet / Ngjarjet (Events)
+- Eventet ne JavaScript shkrepen kur ndodh ndonje interaksion ne HTML dokument.
+- Shembullin me te zakonshem e kemi psh. klikojme ne nje button apo kur shtypim tastin Enter 
+# Progress: 1h:31m:00s/2h:17m:59s
