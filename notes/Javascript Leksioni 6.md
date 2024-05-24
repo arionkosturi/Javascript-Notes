@@ -231,4 +231,4 @@ Nje shembull me CRUD (Create, Read, Update, Delete):
 ### Eventet / Ngjarjet (Events)
 - Eventet ne JavaScript shkrepen kur ndodh ndonje interaksion ne HTML dokument.
 - Shembullin me te zakonshem e kemi psh. klikojme ne nje button apo kur shtypim tastin Enter 
-# Progress: 1h:31m:00s/2h:17m:59s
+# Progress: 1h:32m:05s/2h:17m:59s
