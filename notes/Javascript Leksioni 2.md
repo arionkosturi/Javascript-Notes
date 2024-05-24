@@ -223,5 +223,23 @@ Shembull nese a=2 dhe b=3 atehere dalja e programit duhet te jete 8.
 Te shkruhet programi i cili permes perdorimit te unazes `while` logarit x! (faktorialin e numrit x)  
 Shembull:  
 Nese x=5 atehere dalja duhet te jete 120. (dmth 5x4x3x2x1) 
+```js
+let x = 5;
+let r = 1;
 
-# Progres: 1h:47m:20s
+while(x >= 1) {
+    r *= x
+    x--
+}
+
+console.log(r); // 120
+```
+
+### Funksionet:
++ Funksionet ne JavaScript definohen permes celesfjales `function`, pas se ciles pasun emri i funksionit dhe kllapat - ne mes te kllapave mund te definohen parametrat sipas nevojes.
++ Funksionet mund te kene edhe parametra te paradefinuara.
++ Ekszistojne funksione boshe (void) te cilat nuk kthejne vlere
++ Si dhe funksione te cilat kthejne vlere.
++ Ne menyre qe te shohim daljen e funksionit ne duhet ta aktivizojme te njejtin.
++ Aktivizimi i funksionit behet permes emrit dhe kllapave `emriFunksionit();`
+# Progres: 2h:03m:20s
