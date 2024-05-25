@@ -295,6 +295,38 @@ Shembull 3 me eventet - useCapture ose Bubbling:
     </script>
 </body>
 ```
-### Modulet
+---
+## Modulet
+- Modulet reprezantojne skeda te posatshme ne te cilat shkruhet kod qe kryen nje funksionalitet te caktuar.
+- Perdoren per te izoluar dhe modelizuar kodin.
+- Mund te perdoren ne vende dhe raste te ndryshme, pasi te jene definuar.
+- Modulet mund te importohen dhe eksportohen permes celesfjaleve.
+  - Per importim perdoret celesfjala `import`.
+  - Per exportim perdoret celesfjala `export`.
+---
+Shembull i thjeshte me modulet.  
+1. Krijojme nje dokument me emrin `Math.js` ne folderin `modules`:
+```js 
+//eksportojme funksionet add dhe sub.
+export function add(x, y) {
+    return x + y
+}
 
-# Progress: 1h:51m:05s/2h:17m:59s
+export function sub(x, y) {
+    return x - y
+}
+```
+2. Importojme modulin ne dokumentin HTML:
+```html
+<body>
+    <script type="module">
+        // importojme modulin
+        import {sub} from "./modules/Math.js"
+
+        const x = parseInt(prompt('Jepe nr. x: '))
+        const y = parseInt(prompt('Jepe nr. y: '))
+        // perdorim funksionin e importuar nga moduli.
+        alert(sub(x, y))
+    </script>
+</body>
+```
