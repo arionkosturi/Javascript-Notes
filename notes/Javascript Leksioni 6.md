@@ -330,3 +330,65 @@ export function sub(x, y) {
     </script>
 </body>
 ```
+---
+Nje shembull tjeter me modulet.
+1. Krijojme nje dokument `Gallery.js` ne folderin `modules`.
+```js
+const images = [
+'https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg',
+'https://images.pexels.com/photos/1547813/pexels-photo-1547813.jpeg',
+'https://images.pexels.com/photos/1366909/pexels-photo-1366909.jpeg',
+'https://images.pexels.com/photos/1820563/pexels-photo-1820563.jpeg'
+]
+
+function scaleImage(event) { event.target.style.scale = 2.5 }
+
+export function create_gallery(parent) {
+
+    let html = ''
+    for(let img of images) {
+        html += `<img src="${img}" style="height: 120px" onclick="scaleImage(event)" />`
+    }
+    parent.innerHTML = html
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body {
+            margin: 0px;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            gap: 10px;
+        }
+
+        img:hover {
+            z-index: 99999;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg" style="height: 120px" onclick="scaleImage(event)"><img src="https://images.pexels.com/photos/1547813/pexels-photo-1547813.jpeg" style="height: 120px" onclick="scaleImage(event)"><img src="https://images.pexels.com/photos/1366909/pexels-photo-1366909.jpeg" style="height: 120px" onclick="scaleImage(event)"><img src="https://images.pexels.com/photos/1820563/pexels-photo-1820563.jpeg" style="height: 120px" onclick="scaleImage(event)">
+</body>
+    <script type="module">
+        // import {create_gallery} from "./modules/Gallery.js"
+
+        // create_gallery(document.body)
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('mouseover', e => e.target.style.scale = 1.5)
+            img.addEventListener('mouseout', e => e.target.style.scale = 1)
+        })
+    </script>
+</body>
+</html>
+```
