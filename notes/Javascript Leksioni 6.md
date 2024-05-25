@@ -230,5 +230,63 @@ Nje shembull me CRUD (Create, Read, Update, Delete):
 ```
 ### Eventet / Ngjarjet (Events)
 - Eventet ne JavaScript shkrepen kur ndodh ndonje interaksion ne HTML dokument.
-- Shembullin me te zakonshem e kemi psh. klikojme ne nje button apo kur shtypim tastin Enter 
-# Progress: 1h:32m:05s/2h:17m:59s
+- Shembullin me te zakonshem e kemi psh. klikojme ne nje button apo kur shtypim tastin `Enter`pasi kemi shkruar nodnje tekst ne fushen per kerkim.
+- Eventet duhen te definohen dhe percaktohen se ne cilin element dhe pas ciles ngjarje do te shkrepen.
+- Eventet ne JavaScript definohen permes metodes `addEventListener` ose direkt ne element si atribut.
+
+
+Shembull 1 me eventet:
+- Perzgjedhim elementin mbi te cilin ndodh eventi.
+- Cili eshte eventi? Ne rastin tone `click` dhe cfare ndodh mbas eventit?
+ 
+```html
+<body>
+    <h1>Welcome</h1>
+    <button>Click me!</button>
+    <script>
+        // perzgjedhim elementin mbi te cilin ndodhe eventi
+        const btn = document.querySelector('button')
+
+        // cili eshte eventi? ne rastin tone 'click'
+        btn.addEventListener('click', function() { 
+            const h1 = document.querySelector('h1')
+            h1.innerHTML = 'Buttoni u klikua'
+            h1.style.color = 'red'
+        })
+    </script>
+</body>
+```
+Shembulli 2 me eventet:
+```html
+<body>
+    <h1>Welcome</h1>
+    <button>Click me!</button>
+    <script>
+        // perzgjedhim elementin mbi te cilin ndodhe eventi
+        const btn = document.querySelector('button')
+
+        // cili eshte evnti? ne rastin tone 'click'
+        btn.addEventListener('click', event => { 
+            // console.log(event.target)
+            event.target.innerHTML = 'Butoni u klikua'
+            event.target.style.color = 'blue'
+        })
+    </script>
+</body>
+```
+
+3
+```html
+<body>
+    <div>
+        <button>Click me!</button>
+    </div>
+    <script>
+        const div = document.querySelector('div')
+        const btn = document.querySelector('button')
+        div.addEventListener('click', e => console.log('eventi i div-it'), true)
+        btn.addEventListener('click', e => console.log('eventi i btn-se'), true)
+    </script>
+</body>
+```
+# Progress: 1h:41m:05s/2h:17m:59s
