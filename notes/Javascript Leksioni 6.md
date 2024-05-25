@@ -234,7 +234,13 @@ Nje shembull me CRUD (Create, Read, Update, Delete):
 - Eventet duhen te definohen dhe percaktohen se ne cilin element dhe pas ciles ngjarje do te shkrepen.
 - Eventet ne JavaScript definohen permes metodes `addEventListener` ose direkt ne element si atribut.
 
-
+- Struktura eshte:
+  - Parametri i pare eshte tipi i eventit, si `click`, `mousedown` ose cdo event tjeter ne HTML DOM.
+  - Parametri i dyte eshte funksioni qe duam te therrasim kur ndodh eventi.
+  - Parametri i trete eshte nje vlere `Boolean` nese do perdorim `bubbling` apo `capturing`. (Kjo eshte opsionale) 
+```js
+element.addEventListener(event, function, useCapture);
+```
 Shembull 1 me eventet:
 - Perzgjedhim elementin mbi te cilin ndodh eventi.
 - Cili eshte eventi? Ne rastin tone `click` dhe cfare ndodh mbas eventit?
@@ -275,7 +281,7 @@ Shembulli 2 me eventet:
 </body>
 ```
 
-3
+Shembull 3 me eventet - useCapture ose Bubbling:
 ```html
 <body>
     <div>
@@ -289,4 +295,6 @@ Shembulli 2 me eventet:
     </script>
 </body>
 ```
-# Progress: 1h:41m:05s/2h:17m:59s
+### Modulet
+
+# Progress: 1h:51m:05s/2h:17m:59s
