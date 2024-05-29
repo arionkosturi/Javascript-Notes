@@ -88,5 +88,32 @@ funksioni gjithmonë kthen një premtim (promise)
 - Await - bën që JavaScript të presë deri sa premtimi (promise) të
 zbatohet dhe të kthehet rezultati
 
+Shembull me `async` dhe `await`:
+
+```js
+ console.log('hi')
+        
+        async function f(x, y) {
+            const devide = new Promise(function(resolve, reject) {
+                if(y == 0) {
+                    reject('Nuk pjestohet me zero!')
+                    return;
+                }
+
+                setTimeout(() => {
+                    resolve(x / y)
+                }, 5000)
+            })
+
+            document.write(await devide)
+        }
+
+        
+        f(100, 20) // f per tu ekzekutuar nuk ka nevoje te pres oper. tjera
+
+        setTimeout(() => {
+            console.log('hi after 2 sec')
+        }, 2000)
+```
 
 # Progres 0h33m00s/2h16m24s
