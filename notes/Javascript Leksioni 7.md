@@ -30,17 +30,12 @@ let index = 0
            index++
         }, 5000)
 ```
-Shembull me `setTimeout`:
+Shembull me `setTimeout`:  
 Mbas 5 sekondash shtohet nje element `p`:
 ```html
-
 <body>
-
 <h1>Welcome</h1>
-
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    
-    
 <script>
 const text = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'
 
@@ -53,4 +48,21 @@ const text = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'
         // 5000 milisekonda = 5 sekonda
     </script>
 </body>
+```
+##### Premtimet (Promises)
+- Premtimi është një prokurë për një vlerë e cila jo detyrimisht është e njohur në momentin kur krijohet premtimi (promise).
+- Krijohet përmes klasës Promise dhe pranon si argument një funksion
+me dy parametra.
+  - `Resolve`.
+  - `Rejected`.
+- Ka tre gjendje në të cilat mund të kalojë:
+  - `pending`: gjendja fillestare, as i përmbushur e as i refuzuar. 
+  - `fulfilled`: operacionet u përfunduan me sukses.
+  - `rejected`: diçka shkoi keq përgjatë kryerjes së operacioneve.
+
+Shembull me `Promise`:
+
+```js
+
+
 ```
