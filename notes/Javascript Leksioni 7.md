@@ -181,5 +181,9 @@ Shembull me AJAX:
 - Instalohet përmes komandës npm install axios
 - Dokumentimi i Axios https://github.com/axios/axios
 
+Shembull me `axios`:
+```html
 
+
+```
 # Progres 0h55m00s/2h16m24s
