@@ -9,7 +9,7 @@
 - Konsumimi i API-ve përmes Axios
 - Web Storage API
 ---
-##### setInterval dhe setTimeout
+#### setInterval dhe setTimeout
 - `setInterval` – përsëritje e një funksioni ne menyre ciklike gjate nje intervali te caktuar.
 - `setTimeout` - ekzekutimi i një funksioni pas një intervali të
 caktuar.
@@ -49,7 +49,7 @@ const text = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'
     </script>
 </body>
 ```
-##### Premtimet (Promises)
+#### Premtimet (Promises)
 - Premtimi është një prokurë për një vlerë e cila jo detyrimisht është e njohur në momentin kur krijohet premtimi (promise).
 - Krijohet përmes klasës Promise dhe pranon si argument një funksion
 me dy parametra.
@@ -79,6 +79,14 @@ divide(10, 0)
   .catch(err => console.log(err))
 ```
 
+#### Programimi asinkron (Async/Await)
+- Në JavaScript ekziston sintaksë speciale për të punuar me promiset në
+mënyrë më komode
+- Çelësfjalët `async` dhe `await`
+- Async – kur kjo çelësfjalë qëndron para emrit të funksionit tregon se
+funksioni gjithmonë kthen një premtim (promise)
+- Await - bën që JavaScript të presë deri sa premtimi (promise) të
+zbatohet dhe të kthehet rezultati
 
 
 # Progres 0h33m00s/2h16m24s
