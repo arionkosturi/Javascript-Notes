@@ -260,7 +260,36 @@ localStorage.clear();
 
 Shembull me Local Storage:
 ```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    <button>Delete email</button>
+    <script>
+        const student = {
+            name: 'John',
+            age: 20
+        }
 
+        localStorage.setItem('studenti', JSON.stringify(student))
+
+        const s = JSON.parse(localStorage.getItem('studenti'))
+        
+        console.log(s.age)
+
+
+        // const key = 'email'
+        // const value = 'john@live.com'
+        // localStorage.setItem(key, value)
+        // alert(localStorage.getItem(key))
+        // document.querySelector('button').addEventListener('click', () => localStorage.removeItem(key))
+    </script>
+</body>
+</html>
 
 ```
 # Progres 1h55m00s/2h16m24s
