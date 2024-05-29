@@ -183,7 +183,84 @@ Shembull me AJAX:
 
 Shembull me `axios`:
 ```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, 
+    initial-scale=1.0">
+    <title>Axios Todos</title>
+</head>
+<body>
+    
+<script type="module">
+import axios from './node_modules/axios/dist/esm/axios.js';
+
+function composeTable(data) {
+let html = `
+    <h1>Todos</h1>
+    <table border="1">
+    <tr>
+    <th>ID</th>
+    <th>Title</th>
+    <th>Completed</th>
+    </tr>`
+    
+for(let item of data) {
+    html += `
+    <tr>
+    <td>${item.id}</td>
+    <td>${item.title}</td>
+    <td>${item.completed ? 'Yes' : 'No'}</td>
+    </tr>`
+    }
+    
+    html += `
+    </table>
+    `
+    return html
+}
+axios.get('https://jsonplaceholder.typicode.com/todos')
+     .then(function (response) {
+           const todos = response.data
+         document.body.innerHTML = composeTable(todos)
+       })
+     .catch(function (error) {
+         console.log(error);
+        })
+    </script>
+</body>
+</html>
+```
+#### Local Storage
+- Hapërsira në të cilën ruhen të dhëna permanente
+- Të dhënat ruhen në paisjen e përdoruesit
+- Procedurat kryhen përmes funksioneve të integruara 
+
+Per te ruajtur te dhenat ne Local Storage:
+```js
+localStorage.setItem(key,value);
+```
+
+Per te lexuar te dhenat nga Local Storage:
+```js
+let lastname = localStorage.getItem(key);
+```
+
+Per te hequr te dhenat nga Local Storage:
+```js
+localStorage.removeItem(key);
+```
+
+Per te fshire te githa te dhenat e ruajtura ne Local Storage:
+```js
+localStorage.clear();
+```
+
+Shembull me Local Storage:
+```html
 
 
 ```
-# Progres 0h55m00s/2h16m24s
+# Progres 1h55m00s/2h16m24s
