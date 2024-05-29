@@ -116,4 +116,64 @@ Shembull me `async` dhe `await`:
         }, 2000)
 ```
 
-# Progres 0h33m00s/2h16m24s
+#### AJAX
+- AJAX është akronim për Asynchronous Javascript And XML.
+- Për herë të parë u prezantua në Mars të vitit 1999.
+- Përmes AJAX ne mund të marrim të dhëna nga servuesi dhe përditësojmë pjesë të caktuara në ueb sajt pa pasur nevojë të rifresokojmë faqen.
+- Në parim Ajax e përdorë klasën XMLHttpRequest (XHR) për të dërguar
+dhe pranuar informacione nga ueb servuesi në mënyrë asinkrone pa e bllokuar faqen.
+
+
+Shembull me AJAX:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+    <title>AJAX</title>
+    <style>
+        .box { 
+        box-sizing: border-box; 
+        width: 800px; 
+        border: 1px solid #ccc; 
+        padding: 10px; 
+        margin: 40px auto; 
+        display: grid; 
+        justify-content: center; 
+        grid-template-columns: 500px 250px; gap: 10px; 
+        }
+        #students { background-color: antiquewhite;}
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>
+            <h1>Welcome</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <button id="load-students">Get students</button>
+        </div>
+        <div id="students"></div>
+    </div>
+
+    <script>
+        function getStudents(filepath, targetElement) {
+            const xhttp = new XMLHttpRequest()
+            xhttp.onload = function() {
+                targetElement.innerHTML = this.responseText
+            }
+            xhttp.open('GET', filepath)
+            xhttp.send()
+        }
+
+        const btn = document.querySelector('#load-students')
+        const students_div = document.querySelector('#students')
+        
+        btn.addEventListener('click', () => getStudents('students.txt', students_div))
+    </script>
+</body>
+</html>
+```
+
+# Progres 0h55m00s/2h16m24s
