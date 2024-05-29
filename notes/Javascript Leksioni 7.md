@@ -63,9 +63,22 @@ me dy parametra.
 Shembull me `Promise`:
 
 ```js
-
-
+const divide = (x, y) => new Promis ((resolve, reject) => {
+    if(y == 0) {
+    reject('Nuk pjestohet me zero!')
+    return;
+    }
+    resolve(x / y)
+})
+ 
+// jemi duke aktivizuar funksion i cili kthen promise
+divide(10, 0)
+// rezultati i resolve trajtohet ne then 
+  .then(resp => console.log(resp))
+// rezultati i reject trajtohet ne catch
+  .catch(err => console.log(err))
 ```
+
 
 
 # Progres 0h33m00s/2h16m24s
