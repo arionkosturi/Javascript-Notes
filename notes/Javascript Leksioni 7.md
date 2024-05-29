@@ -290,6 +290,4 @@ Shembull me Local Storage:
     </script>
 </body>
 </html>
-
 ```
-# Progres 1h55m00s/2h16m24s
