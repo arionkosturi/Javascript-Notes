@@ -175,5 +175,11 @@ Shembull me AJAX:
 </body>
 </html>
 ```
+#### Konsumimi i API-ve me Axios
+- Axios është HTTP klient i bazuar në premtime (promise)
+- Punon në ueb shfletues dhe node.js
+- Instalohet përmes komandës npm install axios
+- Dokumentimi i Axios https://github.com/axios/axios
+
 
 # Progres 0h55m00s/2h16m24s
