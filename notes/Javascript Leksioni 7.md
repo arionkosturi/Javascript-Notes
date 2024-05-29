@@ -17,7 +17,7 @@ caktuar.
 - `setInterval` (function, interval).
 - `setTimeout` (function, interval).
 
-Shembull me `setInterval`
+Shembull me `setInterval`:
 ```js
 let colors = ['red', 'green', 'blue', 'orange', 'yellow', 'purple']
 let index = 0
@@ -66,3 +66,6 @@ Shembull me `Promise`:
 
 
 ```
+
+
+# Progres 0h33m00s/2h16m24s
